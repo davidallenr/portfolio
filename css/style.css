@@ -1,4 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #121212;
   color: whitesmoke;
+}
+
+header img {
+  border-radius: 50%;
+  border: 0.175rem solid #ffffff;
+  width: 25%;
 }
