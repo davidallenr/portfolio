@@ -57,6 +57,8 @@
           height: 3px;
           background-color: $mainColor;
           cursor: pointer;
+          transform-origin: left;
+          transition: all 2s ease;
         }
       }
 
@@ -65,6 +67,28 @@
         color: $mainColor;
         font-weight: 600;
         margin-right: 20px;
+      }
+    }
+  }
+
+  &.active {
+    background-color: $mainColor;
+    color: whitesmoke;
+
+    .hamburger {
+      span {
+        &:first-child {
+          background-color: whitesmoke;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          background-color: whitesmoke;
+          opacity: 0;
+        }
+        &:last-child {
+          background-color: whitesmoke;
+          transform: rotate(-45deg);
+        }
       }
     }
   }
