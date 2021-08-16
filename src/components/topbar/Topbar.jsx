@@ -18,11 +18,19 @@ export default function Topbar() {
 
                 </div>
                 <div className="right">
+                    <div className="hamburger">
+                        <span className = "line1"></span>
+                        <span className = "line2"></span>
+                        <span className = "line3"></span>
+                    </div>
+                    
+                    {/*
                     <a href="#intro" >Intro</a>
                     <a href="#portfolio">portfolio</a>
                     <a href="#works">works</a>
                     <a href="#testimonials">testimonials</a>
                     <a href="#contact">contact</a>
+                    */}
                 </div>
             </div>
         </div>
