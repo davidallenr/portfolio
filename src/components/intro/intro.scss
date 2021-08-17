@@ -47,6 +47,33 @@
           font-size: inherit;
           color: #65c9ff;
         }
+
+        .ityped-cursor {
+          font-size: 2.2rem;
+          opacity: 1;
+          -webkit-animation: blink 0.5s infinite;
+          -moz-animation: blink 0.5s infinite;
+          animation: blink 0.5s infinite;
+          animation-direction: alternate;
+        }
+
+        @keyframes blink {
+          100% {
+            opacity: 0;
+          }
+        }
+
+        @-webkit-keyframes blink {
+          100% {
+            opacity: 0;
+          }
+        }
+
+        @-moz-keyframes blink {
+          100% {
+            opacity: 0;
+          }
+        }
       }
 
       h3 {
