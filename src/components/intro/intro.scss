@@ -80,13 +80,15 @@
         font-size: 30px;
       }
 
+      /* ARROW SECTION */
       a {
         position: absolute;
         bottom: 5px;
         left: 40%;
-        width: 200px;
+        background-color: crimson;
+        border-radius: 20%;
         font-style: inherit;
-        color: crimson;
+        color: white;
         text-decoration: none;
         animation: arrowBlink 2s infinite;
         -webkit-animation: arrowBlink 2s infinite;
