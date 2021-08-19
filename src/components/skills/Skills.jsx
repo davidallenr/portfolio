@@ -1,6 +1,7 @@
 import "./skills.scss"
 import GitHubIcon from '@material-ui/icons/GitHub';
-import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+
 
 export default function Skills() {
     return (
@@ -40,10 +41,8 @@ export default function Skills() {
             </div>
             <div className="right">
                 <div className="wrapper">
-                    <div className="icon"><GitHubIcon/><span>Davidallenr</span></div>
-                    <a href = "#contact">
-                        <KeyboardArrowDownIcon/>
-                    </a>
+                <div className="icon"><GitHubIcon/><span>Davidallenr</span></div>
+                <div className="icon"><LinkedInIcon/><span>Davidallenr</span></div>
                 </div>
             </div>
         </div>
