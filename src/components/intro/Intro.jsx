@@ -31,7 +31,6 @@ export default function Intro() {
                                 <KeyboardArrowDownIcon/>
                             </a>
                         </h2>
-                        
                 </div>
             </div>
         </div>
