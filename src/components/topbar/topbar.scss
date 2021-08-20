@@ -60,12 +60,28 @@
 }
 
 /* RIGHT SIDE */
+
+.topbar .wrapper .right .navbar {
+  @include desktop {
+    display: flex;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
 .topbar .wrapper .right .hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 32px;
-  height: 25px;
+  @include desktop {
+    display: none;
+  }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 25px;
+  }
 }
 
 .topbar .wrapper .right span {

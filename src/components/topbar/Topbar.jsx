@@ -18,6 +18,17 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                         <span className = "line2"></span>
                         <span className = "line3"></span>
                     </div>
+                    <ul className = "navbar">
+                        <li>
+                            <a href = "#intro">Home</a>
+                        </li>
+                        <li>
+                            <a href = "#skills">Skills</a>
+                        </li>
+                        <li>
+                            <a href = "#contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

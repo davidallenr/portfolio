@@ -7,3 +7,9 @@ $width: 768px;
     @content;
   }
 }
+
+@mixin desktop {
+  @media (min-width: #{$width + 1}) {
+    @content;
+  }
+}
