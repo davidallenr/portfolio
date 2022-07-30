@@ -110,16 +110,20 @@
       /* ARROW SECTION */
       a {
         position: absolute;
-        bottom: 5px;
-        left: 40%;
         background-color: crimson;
         border-radius: 20%;
-        font-style: inherit;
         color: white;
-        text-decoration: none;
         animation: arrowBlink 2s infinite;
         -webkit-animation: arrowBlink 2s infinite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        width: 50px;
+        bottom: 5px;
+
       }
+
 
       @keyframes arrowBlink {
         from {

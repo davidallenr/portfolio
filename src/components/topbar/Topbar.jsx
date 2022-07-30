@@ -25,9 +25,6 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                         <li>
                             <a href = "#skills">Skills</a>
                         </li>
-                        <li>
-                            <a href = "#contact">Contact</a>
-                        </li>
                     </ul>
                 </div>
             </div>
