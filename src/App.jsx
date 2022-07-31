@@ -1,22 +1,26 @@
-import Topbar from "./components/topbar/Topbar"
-import Menu from "./components/menu/Menu"
-import Intro from "./components/intro/Intro"
-import Skills from "./components/skills/Skills"
 import "./app.scss"
-import { useState } from "react";
+import Form from "./components/Form";
+import { createContext, useState } from "react";
+import ReactSwitch from "react-switch";
+
+export const ThemeContext = createContext(null);
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [theme, setTheme] = useState("dark");
 
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  };
+  
   return (
-    <div className="app">
-      <Topbar menuOpen = {menuOpen} setMenuOpen = {setMenuOpen}/>
-      <Menu menuOpen = {menuOpen} setMenuOpen = {setMenuOpen}/>
-      <div className="sections">
-        <Intro/>
-        <Skills/>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <div className="App" id={theme}>
+        <Form />
+        <div className="switch">
+          <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
+        </div>
       </div>
-    </div>
+    </ThemeContext.Provider>
   );
 }
 

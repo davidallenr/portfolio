@@ -1,25 +1,65 @@
-.app {
+.App {
+  font-family: "Ubuntu", sans-serif;
+  width: 100vw;
   height: 100vh;
-  .sections {
-    width: 100%;
-    height: calc(100vh - 70px);
-    background-color: #121212;
-    position: relative;
-    top: 70px;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-  
-    /* HIDING SCROLLBAR FOR BROSWERS */
-    scrollbar-width: none; //Firefox
-  
-    &::-webkit-scrollbar {
-      display: none; //Chrome
-    }
-  
-    > * {
-      width: 100vw;
-      height: calc(100vh - 70px);
-      scroll-snap-align: start;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#light {
+  background-color: #f3ebf6;
+  .main {
+    background-color: #fff;
+    
   }
+  .sign {
+    color: #8c55aa;
+  }
+}
+
+#dark {
+  background-color: #46045e;
+  .main {
+    background-color: #38004c;
+  }
+  .sign {
+    color: #ffffff;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  
+  .main {
+    width: 400px;
+    height: 400px;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  }
+}
+
+.sign {
+  padding-top: 40px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+@media (max-width: 600px) {
+  .main {
+    border-radius: 0px;
+  }
+}
+
+.switch {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  min-width: 50px;
+  min-height: 50px;
+  bottom: 4px;
+  right: 4px;
 }
