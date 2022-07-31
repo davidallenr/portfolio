@@ -32,23 +32,23 @@ img {
   color: #ffffff;
 }
 
-
 .sign {
   padding-top: 40px;
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   font-size: 23px;
 }
-
-
-
+svg {
+  color: white;
+  margin-top: 5px;
+  margin-left: 5px;
+}
 .switch {
   @include mobile {
     display: none;
   }
-  
-  @include desktop {
 
+  @include desktop {
     display: flex;
     position: fixed;
     align-items: center;
