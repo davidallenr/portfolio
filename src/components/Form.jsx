@@ -2,10 +2,11 @@ import React from "react";
 
 function Form() {
   return (
-    <div className="main">
-      <p className="sign" align="center"> Hello! My name is </p>
-      <h1 align="center">David Russell!</h1>
-    </div>
+    <React.Fragment>
+      <p className="sign" > Hello! My name is </p>
+      <h1 className="name">David Russell!</h1>
+      <img src="assets/avataaars.png" alt="Avatar of David" />
+    </React.Fragment>
   );
 }
 
