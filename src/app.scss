@@ -40,8 +40,9 @@ img {
 }
 svg {
   color: white;
-  margin-top: 5px;
-  margin-left: 5px;
+  height: 100%;
+  width: 75%;
+  margin-left: 3px;
 }
 .switch {
   @include mobile {
