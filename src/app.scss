@@ -4,6 +4,7 @@
 body {
   margin: 0;
   padding: 0;
+  animation-fill-mode: forwards;
 }
 
 .App {
@@ -26,11 +27,13 @@ img {
 #light {
   background-color: #f3ebf6;
   color: #8c55aa;
+  animation: fadeToLight 1s;
 }
 
 #dark {
   background-color: #46045e;
   color: #ffffff;
+  animation: fadeToDark 1s;
 }
 
 .sign {
@@ -44,4 +47,26 @@ svg {
   height: 100%;
   width: 75%;
   margin-left: 3px;
+}
+
+@keyframes fadeToDark {
+  from { 
+    background-color: #f3ebf6; 
+    color: #8c55aa;
+  }
+  to { 
+    background-color: #46045e; 
+    color: #ffffff;
+  }
+}
+
+@keyframes fadeToLight {
+  from { 
+    background-color: #46045e; 
+    color: #ffffff;
+  }
+  to { 
+    background-color: #f3ebf6;
+    color: #8c55aa; 
+  }
 }
