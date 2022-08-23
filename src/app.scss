@@ -45,19 +45,3 @@ svg {
   width: 75%;
   margin-left: 3px;
 }
-
-.slider {
-  @include mobile {
-    display: none;
-  }
-
-  @include desktop {
-    display: flex;
-    position: fixed;
-    align-items: center;
-    min-width: 50px;
-    min-height: 50px;
-    bottom: 4px;
-    right: 4px;
-  }
-}

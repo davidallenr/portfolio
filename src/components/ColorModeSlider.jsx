@@ -1,7 +1,6 @@
 import React from "react";
 
 const ColorModeSlider = ({toggleTheme, currentTheme}) => {
-  console.log("Theme", currentTheme);
   return (
     <React.Fragment>
       <div className="slider">
@@ -9,11 +8,11 @@ const ColorModeSlider = ({toggleTheme, currentTheme}) => {
         <label htmlFor="hide-checkbox" onClick={toggleTheme} className="toggle">
           <span className="toggle-button">
             {[...Array(7)].map((v,i) => {
-              return <span key={"crater" + i} className={"crater crater-" + i} ></span>
+              return <span key={"crater" + i} className={"crater crater-" + (i + 1)} ></span>
             })}
           </span>
           {[...Array(7)].map((v,i) => {
-              return <span key={"star" + i} className={"star star-" + i} ></span>
+              return <span key={"star" + i} className={"star star-" + (i + 1)} ></span>
             })}
         </label>
       </div>

@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:800i&display=swap');
+@import "../global.scss";
+
+.slider {
+  @include mobile {
+    transition: all .2s ease-in-out;
+    scale: .25;
+  }
+
+  @include desktop {
+    transition: all .2s ease-in-out;
+    scale: .5;
+  }
+}
 
 .slider {
   position: absolute;
