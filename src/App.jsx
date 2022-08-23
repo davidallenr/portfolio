@@ -1,8 +1,8 @@
 import "./app.scss"
-import Form from "./components/Form";
+import ContentBox from "./components/ContentBox";
 import { createContext, useState, useEffect } from "react";
-import ReactSwitch from "react-switch";
-import { BsMoonStarsFill, BsSunFill } from 'react-icons/bs';
+import ColorModeSlider from "./components/ColorModeSlider";
+
 
 export const ThemeContext = createContext(null);
 
@@ -23,15 +23,14 @@ function App() {
     }
   }, [currentTheme])
 
-  
-
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="App" id={theme}>
-        <Form />
-        <div className="switch">
-          <ReactSwitch onChange={toggleTheme} checked={currentTheme === "dark"} checkedIcon={<BsSunFill />} uncheckedIcon={<BsMoonStarsFill />}/>
-        </div>
+        <ContentBox />
+        <ColorModeSlider 
+        toggleTheme={toggleTheme} 
+        currentTheme={currentTheme}
+        />
       </div>
     </ThemeContext.Provider>
   );

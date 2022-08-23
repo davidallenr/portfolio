@@ -1,6 +1,6 @@
 import React from "react";
 
-function Form() {
+const ContentBox = () => {
   return (
     <React.Fragment>
       <p className="sign" > Hello! My name is </p>
@@ -10,4 +10,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default ContentBox;
